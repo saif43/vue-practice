@@ -9,12 +9,19 @@
 </template>
 
 <script>
+import BaseBadge from './BaseBadge.vue';
+
+
 export default {
+  name: 'UserInfo',
   props: ['fullName', 'infoText', 'role'],
+  components: {
+    BaseBadge
+  }
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 section {
   margin: 2rem auto;
   max-width: 30rem;

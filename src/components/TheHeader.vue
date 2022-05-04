@@ -3,8 +3,12 @@
     <h1>More on Vue Components</h1>
   </header>
 </template>
-
-<style>
+<script>
+export default {
+    name: 'TheHeader'
+};
+</script>
+<style lang="scss" scoped>
   header {
     width: 100%;
     height: 5rem;
